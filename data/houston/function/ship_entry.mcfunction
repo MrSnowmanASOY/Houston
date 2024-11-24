@@ -1,0 +1,1 @@
+execute in houston:houston/ship run tp @s 0 522 0

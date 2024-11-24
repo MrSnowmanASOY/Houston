@@ -1,0 +1,20 @@
+{
+	"type": "houston:ship/ship_type",
+	"generator": {
+	  "type": "minecraft:flat",
+	  "settings": {
+		"biome": "minecraft:mushroom_fields",
+		"layers": [
+			{
+			  "block": "minecraft:barrier",
+			  "height": 1
+			},
+			{
+				"block": "minecraft:stone",
+				"height": 1
+			}
+		],
+		"structure_overrides": []
+	  }
+	}
+  }

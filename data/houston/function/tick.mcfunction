@@ -13,6 +13,8 @@ execute if score oxy_time timer matches 20 run tellraw @a {"color":"green","text
 execute if score oxy_time timer matches 0 run tellraw @a {"color":"green","text":"No oxy remains. Shift Rollover Called."}
 execute if score oxy_time timer matches 0 run function houston:rollover
 
+execute if score oxy_time timer matches -200 run scoreboard players set oxy_time timer 1
+
 scoreboard players enable @a HPrimer
 execute as @a[scores={HPrimer=1..}] run function houston:load
 scoreboard players set @a HPrimer 0

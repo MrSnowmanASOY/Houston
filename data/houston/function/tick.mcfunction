@@ -15,8 +15,8 @@ execute if score oxy_time timer matches 0 run function houston:rollover
 
 execute if score oxy_time timer matches -200 run scoreboard players set oxy_time timer 1
 
-scoreboard players enable @a HPrimer
-execute as @a[scores={HPrimer=1..}] run function houston:load
-scoreboard players set @a HPrimer 0
+scoreboard players enable @a CourseCorrect
+execute as @a[scores={CourseCorrect=1..}] run function houston:coursecorrect
+scoreboard players set @a CourseCorrect 0
 
 execute if score worldtick timer matches 1 run tellraw @a[team=debug] {"color":"dark_green","text":"Houston Ticking"}

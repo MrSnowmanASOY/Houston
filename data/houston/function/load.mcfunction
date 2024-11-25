@@ -1,7 +1,7 @@
 scoreboard objectives add timer dummy
 scoreboard objectives add location_tracker dummy
 scoreboard objectives add swapping dummy
-scoreboard objectives add HPrimer trigger
+scoreboard objectives add CourseCorrect trigger
 
 team add planet
 team add ship

@@ -19,7 +19,4 @@ scoreboard players enable @a HPrimer
 execute as @a[scores={HPrimer=1..}] run function houston:load
 scoreboard players set @a HPrimer 0
 
-execute as @a at @s if entity @s[y=3000,dy=2000] run tp ~ 312 ~
-
-
 execute if score worldtick timer matches 1 run tellraw @a[team=debug] {"color":"dark_green","text":"Houston Ticking"}

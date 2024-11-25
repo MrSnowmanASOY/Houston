@@ -1,0 +1,56 @@
+{
+	"temperature": 0.9,
+	"downfall": 1,
+	"has_precipitation": false,
+	"temperature_modifier": "none",
+	"effects": {
+		"sky_color": 7842047,
+		"fog_color": 12638463,
+		"water_color": 4159204,
+		"water_fog_color": 329011,
+		"grass_color_modifier": "none",
+		"mood_sound": {
+			"sound": "minecraft:ambient.underwater.loop.additions.ultra_rare",
+			"tick_delay": 1200,
+			"block_search_extent": 8,
+			"offset": 2
+		}
+	},
+	"spawners": {
+		"creature": [
+			{
+				"type": "minecraft:cow",
+				"weight": 100,
+				"minCount": 2,
+				"maxCount": 5
+			},
+			{
+				"type": "minecraft:pig",
+				"weight": 100,
+				"minCount": 2,
+				"maxCount": 5
+			},
+			{
+				"type": "minecraft:chicken",
+				"weight": 100,
+				"minCount": 2,
+				"maxCount": 3
+			},
+			{
+				"type": "minecraft:sheep",
+				"weight": 100,
+				"minCount": 2,
+				"maxCount": 4
+			},
+			{
+				"type": "minecraft:villager",
+				"weight": 1,
+				"minCount": 1,
+				"maxCount": 1
+			}
+		]
+	},
+	"spawn_costs": {},
+	"carvers": [],
+	"features": []
+}

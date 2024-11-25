@@ -3,7 +3,7 @@
 	"generator": {
 	  "type": "minecraft:flat",
 	  "settings": {
-		"biome": "minecraft:mushroom_fields",
+		"biome": "houston:ship_biome",
 		"layers": [
 			{
 				"block": "minecraft:air",

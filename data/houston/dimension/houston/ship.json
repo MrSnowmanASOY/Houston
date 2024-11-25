@@ -6,11 +6,7 @@
 		"biome": "minecraft:mushroom_fields",
 		"layers": [
 			{
-			  "block": "minecraft:barrier",
-			  "height": 1
-			},
-			{
-				"block": "minecraft:stone",
+				"block": "minecraft:air",
 				"height": 1
 			}
 		],

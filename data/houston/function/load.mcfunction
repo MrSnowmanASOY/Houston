@@ -20,4 +20,6 @@ scoreboard players set @a location_tracker 1
 scoreboard players remove @r location_tracker 1
 execute if score oxy_time timer matches -200 run scoreboard players set oxy_time timer 1
 
+execute in houston:houston/ship run setblock 0 60 0 bedrock
+
 tellraw @a {"color":"yellow","text":"Houston we have landing"}

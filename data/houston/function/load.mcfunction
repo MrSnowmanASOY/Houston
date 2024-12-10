@@ -1,7 +1,11 @@
+time set 0
+
 scoreboard objectives add timer dummy
 scoreboard objectives add location_tracker dummy
 scoreboard objectives add swapping dummy
 scoreboard objectives add CourseCorrect trigger
+scoreboard objectives add playtime minecraft.custom:minecraft.play_time
+scoreboard objectives add datastore dummy
 
 team add planet
 team add ship
@@ -15,12 +19,12 @@ execute in houston:houston/ship run forceload add 0 0 0 0
 
 scoreboard players set worldtick timer 0
 scoreboard players set secondcount timer 0
-scoreboard players set @a location_tracker 1
-scoreboard players remove @r location_tracker 1
+scoreboard players set shipmembers datastore 0
+scoreboard players set planetmembers datastore 0
+scoreboard players set ticker datastore 0
+scoreboard players set oxy_time timer 24000
 
-execute as @a at @s if score @s location_tracker matches 1 run team join planet
-execute as @a at @s if score @s location_tracker matches 0 run team join ship
 
-execute in houston:houston/ship run setblock 0 60 0 bedrock
+execute in houston:houston/ship run setblock 0 61 0 bedrock
 
 tellraw @a {"color":"yellow","text":"Houston we have landing"}

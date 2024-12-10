@@ -8,3 +8,6 @@ scoreboard players remove oxy_time timer 1
 
 execute store result score day_time timer run time query day
 execute if score day_time timer matches 1 run function houston:rollover
+
+execute if score ticker datastore matches 0 run scoreboard players set ticker datastore 1
+execute if score ticker datastore matches 1 run scoreboard players set ticker datastore 0

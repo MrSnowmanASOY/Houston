@@ -1,0 +1,5 @@
+location_tracker:
+    on ship: 0
+    on planet: 1
+    entering planet: 2
+    entering ship: 3
